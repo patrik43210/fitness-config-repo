@@ -1,12 +1,15 @@
 server:
   port: 8081
+
 spring:
   application:
     name: user-service
+
   datasource:
     url: jdbc:postgresql://localhost:5432/fitnessapp_db
     username: patrik
     password: secret
+
   jpa:
     hibernate:
       ddl-auto: update
@@ -14,6 +17,7 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+        
 eureka:
   client:
     service-url:
