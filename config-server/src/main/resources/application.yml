@@ -2,15 +2,15 @@ server:
   port: 8888
 
 spring:
+  profiles:
+    active: native
   application:
     name: config-server
   cloud:
     config:
       server:
-        git:
-          uri: https://github.com/patrik43210/fitness-config-repo/config-server/src/main/resources/config
-          default-label: main
-          clone-on-start: true
+        native:
+          search-locations: classpath:/config
 
 eureka:
   client:
