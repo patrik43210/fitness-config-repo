@@ -8,7 +8,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/patrik43210/fitness-config-repo
+          uri: https://github.com/patrik43210/fitness-config-repo/tree/main/config-server/src/main/resources/config
           default-label: main
           clone-on-start: true
 
